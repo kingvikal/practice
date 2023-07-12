@@ -1,335 +1,225 @@
 {
   level: 'error',
-  message: 'HTTP GET /user/get-all-use',
+  message: 'Error while getting Property "email" was not found in "User". Make sure your query is correct.',
+  metadata: {
+    stack: 'EntityPropertyNotFoundError: Property "email" was not found in "User". Make sure your query is correct.\n' +
+      '    at F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3911:23\n' +
+      '    at Array.forEach (<anonymous>)\n' +
+      '    at SelectQueryBuilder.buildRelations (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3903:32)\n' +
+      '    at F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3973:26\n' +
+      '    at Array.forEach (<anonymous>)\n' +
+      '    at SelectQueryBuilder.buildRelations (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3903:32)\n' +
+      '    at SelectQueryBuilder.applyFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3103:22)\n' +
+      '    at SelectQueryBuilder.setFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:105:14)\n' +
+      '    at EntityManager.find (F:\\Scratch Project\\node_modules\\src\\entity-manager\\EntityManager.ts:1082:14)\n' +
+      '    at Repository.find (F:\\Scratch Project\\node_modules\\src\\repository\\Repository.ts:524:29)',
+    timestamp: '2023-07-12T17:28:55.307Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /rating/get-rating',
   metadata: {
     meta: {
       req: {
-        url: '/user/get-all-use',
+        url: '/rating/get-rating',
         headers: {
-          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
           'user-agent': 'PostmanRuntime/7.32.3',
           accept: '*/*',
           'cache-control': 'no-cache',
-          'postman-token': 'd90848a9-9f2a-44f3-a7e5-980f20f73098',
+          'postman-token': '12064259-ffaa-451f-9c75-6783965b39fe',
           host: 'localhost:8000',
           'accept-encoding': 'gzip, deflate, br',
           connection: 'keep-alive'
         },
         method: 'GET',
         httpVersion: '1.1',
-        originalUrl: '/user/get-all-use',
+        originalUrl: '/rating/get-rating',
         query: {}
       },
       res: { statusCode: 500 },
-      responseTime: 683
+      responseTime: 104
     },
-    timestamp: '2023-07-12T06:46:06.118Z'
-  }
-}
-{
-  level: 'warn',
-  message: 'HTTP POST /user/register',
-  metadata: {
-    meta: {
-      req: {
-        url: '/user/register',
-        headers: {
-          'user-agent': 'PostmanRuntime/7.32.3',
-          accept: '*/*',
-          'cache-control': 'no-cache',
-          'postman-token': 'ba9f23bc-022c-453e-8882-1a03ae58f5c0',
-          host: 'localhost:8000',
-          'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-type': 'multipart/form-data; boundary=--------------------------821906821025234430860421',
-          'content-length': '620240'
-        },
-        method: 'POST',
-        httpVersion: '1.1',
-        originalUrl: '/user/register',
-        query: {}
-      },
-      res: { statusCode: 400 },
-      responseTime: 372
-    },
-    timestamp: '2023-07-12T06:54:35.215Z'
-  }
-}
-{
-  level: 'warn',
-  message: 'HTTP POST /user/register',
-  metadata: {
-    meta: {
-      req: {
-        url: '/user/register',
-        headers: {
-          'user-agent': 'PostmanRuntime/7.32.3',
-          accept: '*/*',
-          'cache-control': 'no-cache',
-          'postman-token': 'f3c11525-9c60-4b95-8fb2-f59260d600c4',
-          host: 'localhost:8000',
-          'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-type': 'multipart/form-data; boundary=--------------------------615255262302022997119275',
-          'content-length': '620128'
-        },
-        method: 'POST',
-        httpVersion: '1.1',
-        originalUrl: '/user/register',
-        query: {}
-      },
-      res: { statusCode: 422 },
-      responseTime: 66
-    },
-    timestamp: '2023-07-12T06:55:15.268Z'
+    timestamp: '2023-07-12T17:28:55.376Z'
   }
 }
 {
   level: 'error',
-  message: 'Error while creating category',
-  metadata: { timestamp: '2023-07-12T10:48:54.503Z' }
+  message: 'Error while getting Property "user, user" was not found in "Rating". Make sure your query is correct.',
+  metadata: {
+    stack: 'EntityPropertyNotFoundError: Property "user, user" was not found in "Rating". Make sure your query is correct.\n' +
+      '    at F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3911:23\n' +
+      '    at Array.forEach (<anonymous>)\n' +
+      '    at SelectQueryBuilder.buildRelations (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3903:32)\n' +
+      '    at SelectQueryBuilder.applyFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3103:22)\n' +
+      '    at SelectQueryBuilder.setFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:105:14)\n' +
+      '    at EntityManager.find (F:\\Scratch Project\\node_modules\\src\\entity-manager\\EntityManager.ts:1082:14)\n' +
+      '    at Repository.find (F:\\Scratch Project\\node_modules\\src\\repository\\Repository.ts:524:29)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\rating.controller.ts:111:40\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\rating.controller.ts:8:71',
+    timestamp: '2023-07-12T17:38:38.725Z'
+  }
 }
 {
   level: 'error',
-  message: 'HTTP POST /category/create',
+  message: 'HTTP GET /rating/get-rating',
   metadata: {
     meta: {
       req: {
-        url: '/category/create',
+        url: '/rating/get-rating',
         headers: {
-          'content-type': 'application/json',
           'user-agent': 'PostmanRuntime/7.32.3',
           accept: '*/*',
           'cache-control': 'no-cache',
-          'postman-token': '14f4e31f-b7aa-4786-a98b-f9c5951bb480',
+          'postman-token': 'a3d3d63c-70cb-4816-913d-14bcfd456b81',
           host: 'localhost:8000',
           'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-length': '33'
+          connection: 'keep-alive'
         },
-        method: 'POST',
+        method: 'GET',
         httpVersion: '1.1',
-        originalUrl: '/category/create',
+        originalUrl: '/rating/get-rating',
         query: {}
       },
       res: { statusCode: 500 },
-      responseTime: 159
+      responseTime: 97
     },
-    timestamp: '2023-07-12T10:48:54.523Z'
+    timestamp: '2023-07-12T17:38:38.776Z'
   }
 }
 {
   level: 'error',
-  message: 'HTTP POST /product/create',
+  message: 'Error while getting Property "user, email" was not found in "Rating". Make sure your query is correct.',
   metadata: {
-    meta: {
-      req: {
-        url: '/product/create',
-        headers: {
-          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
-          'user-agent': 'PostmanRuntime/7.32.3',
-          accept: '*/*',
-          'cache-control': 'no-cache',
-          'postman-token': '25b81cbe-27d0-4c7f-8617-12a81774f547',
-          host: 'localhost:8000',
-          'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-type': 'multipart/form-data; boundary=--------------------------728649565610391290887521',
-          'content-length': '76359'
-        },
-        method: 'POST',
-        httpVersion: '1.1',
-        originalUrl: '/product/create',
-        query: {}
-      },
-      res: { statusCode: 500 },
-      responseTime: 64
-    },
-    timestamp: '2023-07-12T11:19:03.987Z'
+    stack: 'EntityPropertyNotFoundError: Property "user, email" was not found in "Rating". Make sure your query is correct.\n' +
+      '    at F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3911:23\n' +
+      '    at Array.forEach (<anonymous>)\n' +
+      '    at SelectQueryBuilder.buildRelations (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3903:32)\n' +
+      '    at SelectQueryBuilder.applyFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3103:22)\n' +
+      '    at SelectQueryBuilder.setFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:105:14)\n' +
+      '    at EntityManager.find (F:\\Scratch Project\\node_modules\\src\\entity-manager\\EntityManager.ts:1082:14)\n' +
+      '    at Repository.find (F:\\Scratch Project\\node_modules\\src\\repository\\Repository.ts:524:29)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\rating.controller.ts:111:40\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\rating.controller.ts:8:71',
+    timestamp: '2023-07-12T17:39:02.638Z'
   }
 }
 {
   level: 'error',
-  message: 'error while creating product',
-  metadata: { timestamp: '2023-07-12T11:25:41.014Z' }
-}
-{
-  level: 'error',
-  message: 'HTTP POST /product/create',
+  message: 'HTTP GET /rating/get-rating',
   metadata: {
     meta: {
       req: {
-        url: '/product/create',
+        url: '/rating/get-rating',
         headers: {
-          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
           'user-agent': 'PostmanRuntime/7.32.3',
           accept: '*/*',
           'cache-control': 'no-cache',
-          'postman-token': '4e348e8e-6de5-4640-bae2-e9a16068a6bb',
+          'postman-token': '8364d596-fd76-49d6-8fd5-f93efae93d0e',
           host: 'localhost:8000',
           'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-type': 'multipart/form-data; boundary=--------------------------029352027457882512966193',
-          'content-length': '76359'
+          connection: 'keep-alive'
         },
-        method: 'POST',
+        method: 'GET',
         httpVersion: '1.1',
-        originalUrl: '/product/create',
+        originalUrl: '/rating/get-rating',
         query: {}
       },
       res: { statusCode: 500 },
-      responseTime: 412
+      responseTime: 72
     },
-    timestamp: '2023-07-12T11:25:41.041Z'
+    timestamp: '2023-07-12T17:39:02.679Z'
   }
 }
 {
   level: 'error',
-  message: 'HTTP POST /product/create',
+  message: 'Error while getting Property "rating" was not found in "Rating". Make sure your query is correct.',
   metadata: {
-    meta: {
-      req: {
-        url: '/product/create',
-        headers: {
-          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
-          'user-agent': 'PostmanRuntime/7.32.3',
-          accept: '*/*',
-          'cache-control': 'no-cache',
-          'postman-token': 'e658d377-2d53-4e62-8f07-ca01c839d89a',
-          host: 'localhost:8000',
-          'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-type': 'multipart/form-data; boundary=--------------------------385259634665017644998363',
-          'content-length': '76359'
-        },
-        method: 'POST',
-        httpVersion: '1.1',
-        originalUrl: '/product/create',
-        query: {}
-      },
-      res: { statusCode: 500 },
-      responseTime: 16
-    },
-    timestamp: '2023-07-12T11:30:03.218Z'
+    stack: 'EntityPropertyNotFoundError: Property "rating" was not found in "Rating". Make sure your query is correct.\n' +
+      '    at F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3911:23\n' +
+      '    at Array.forEach (<anonymous>)\n' +
+      '    at SelectQueryBuilder.buildRelations (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3903:32)\n' +
+      '    at SelectQueryBuilder.applyFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3103:22)\n' +
+      '    at SelectQueryBuilder.setFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:105:14)\n' +
+      '    at EntityManager.find (F:\\Scratch Project\\node_modules\\src\\entity-manager\\EntityManager.ts:1082:14)\n' +
+      '    at Repository.find (F:\\Scratch Project\\node_modules\\src\\repository\\Repository.ts:524:29)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\rating.controller.ts:111:40\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\rating.controller.ts:8:71',
+    timestamp: '2023-07-12T17:39:30.413Z'
   }
 }
 {
   level: 'error',
-  message: 'HTTP POST /product/create',
+  message: 'HTTP GET /rating/get-rating',
   metadata: {
     meta: {
       req: {
-        url: '/product/create',
+        url: '/rating/get-rating',
         headers: {
-          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
           'user-agent': 'PostmanRuntime/7.32.3',
           accept: '*/*',
           'cache-control': 'no-cache',
-          'postman-token': '9745cce3-da11-4d6d-82f8-d605a07a591c',
+          'postman-token': 'c05e79b1-7ee2-412a-a029-543be60a867a',
           host: 'localhost:8000',
           'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-type': 'multipart/form-data; boundary=--------------------------840465760452237812303602',
-          'content-length': '76359'
+          connection: 'keep-alive'
         },
-        method: 'POST',
+        method: 'GET',
         httpVersion: '1.1',
-        originalUrl: '/product/create',
+        originalUrl: '/rating/get-rating',
         query: {}
       },
       res: { statusCode: 500 },
-      responseTime: 39
+      responseTime: 57
     },
-    timestamp: '2023-07-12T11:30:52.335Z'
+    timestamp: '2023-07-12T17:39:30.451Z'
   }
 }
 {
   level: 'error',
-  message: 'HTTP POST /product/create',
+  message: 'Error while getting Property "email" was not found in "User". Make sure your query is correct.',
   metadata: {
-    meta: {
-      req: {
-        url: '/product/create',
-        headers: {
-          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
-          'user-agent': 'PostmanRuntime/7.32.3',
-          accept: '*/*',
-          'cache-control': 'no-cache',
-          'postman-token': 'f6f4647b-2105-4c9d-8e93-76878f5f8f6b',
-          host: 'localhost:8000',
-          'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-type': 'multipart/form-data; boundary=--------------------------745487152541721814813665',
-          'content-length': '76359'
-        },
-        method: 'POST',
-        httpVersion: '1.1',
-        originalUrl: '/product/create',
-        query: {}
-      },
-      res: { statusCode: 500 },
-      responseTime: 34
-    },
-    timestamp: '2023-07-12T11:35:14.016Z'
+    stack: 'EntityPropertyNotFoundError: Property "email" was not found in "User". Make sure your query is correct.\n' +
+      '    at F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3911:23\n' +
+      '    at Array.forEach (<anonymous>)\n' +
+      '    at SelectQueryBuilder.buildRelations (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3903:32)\n' +
+      '    at F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3973:26\n' +
+      '    at Array.forEach (<anonymous>)\n' +
+      '    at SelectQueryBuilder.buildRelations (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3903:32)\n' +
+      '    at SelectQueryBuilder.applyFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:3103:22)\n' +
+      '    at SelectQueryBuilder.setFindOptions (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:105:14)\n' +
+      '    at EntityManager.find (F:\\Scratch Project\\node_modules\\src\\entity-manager\\EntityManager.ts:1082:14)\n' +
+      '    at Repository.find (F:\\Scratch Project\\node_modules\\src\\repository\\Repository.ts:524:29)',
+    timestamp: '2023-07-12T17:41:00.154Z'
   }
 }
 {
   level: 'error',
-  message: 'HTTP POST /product/create',
+  message: 'HTTP GET /rating/get-rating',
   metadata: {
     meta: {
       req: {
-        url: '/product/create',
+        url: '/rating/get-rating',
         headers: {
-          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
           'user-agent': 'PostmanRuntime/7.32.3',
           accept: '*/*',
           'cache-control': 'no-cache',
-          'postman-token': 'e9cfaadc-ae14-4ad1-8318-c296f4e11264',
+          'postman-token': '549b3610-88e3-47a9-9cd2-596eb0b30a27',
           host: 'localhost:8000',
           'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-type': 'multipart/form-data; boundary=--------------------------183091710289022139558486',
-          'content-length': '76359'
+          connection: 'keep-alive'
         },
-        method: 'POST',
+        method: 'GET',
         httpVersion: '1.1',
-        originalUrl: '/product/create',
+        originalUrl: '/rating/get-rating',
         query: {}
       },
       res: { statusCode: 500 },
-      responseTime: 68
+      responseTime: 115
     },
-    timestamp: '2023-07-12T12:11:37.663Z'
-  }
-}
-{
-  level: 'error',
-  message: 'HTTP POST /product/create',
-  metadata: {
-    meta: {
-      req: {
-        url: '/product/create',
-        headers: {
-          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
-          'user-agent': 'PostmanRuntime/7.32.3',
-          accept: '*/*',
-          'cache-control': 'no-cache',
-          'postman-token': '1ba73f65-a848-449d-a2e0-70e1d3adc200',
-          host: 'localhost:8000',
-          'accept-encoding': 'gzip, deflate, br',
-          connection: 'keep-alive',
-          'content-type': 'multipart/form-data; boundary=--------------------------619325249356223638315128',
-          'content-length': '76359'
-        },
-        method: 'POST',
-        httpVersion: '1.1',
-        originalUrl: '/product/create',
-        query: {}
-      },
-      res: { statusCode: 500 },
-      responseTime: 26
-    },
-    timestamp: '2023-07-12T12:12:17.327Z'
+    timestamp: '2023-07-12T17:41:00.219Z'
   }
 }

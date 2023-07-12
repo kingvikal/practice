@@ -32,7 +32,7 @@ export class Product {
   photo: string;
 
   @OneToMany(() => Rating, (rating) => rating.product)
-  rating: Rating;
+  rating: Rating[];
 
   @ManyToOne(() => Category, (category) => category.product, {
     onDelete: "CASCADE",

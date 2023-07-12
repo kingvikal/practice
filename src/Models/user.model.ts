@@ -1,5 +1,13 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import {
+  Column,
+  Entity,
+  ManyToOne,
+  OneToMany,
+  OneToOne,
+  PrimaryGeneratedColumn,
+} from "typeorm";
 import { Product } from "./product.model";
+import { Rating } from "./rating.model";
 
 enum UserRole {
   ADMIN = "admin",
@@ -34,6 +42,9 @@ export class User {
 
   @Column()
   password: string;
+
+  @OneToMany(() => Rating, (rating) => rating.user)
+  rating: Rating[];
 
   @Column({ type: "enum", enum: UserRole, default: UserRole.USER })
   userType: UserRole;
