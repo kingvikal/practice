@@ -1,5 +1,5 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
-import { UserDocument } from "./document.model";
+import { Product } from "./product.model";
 
 enum UserRole {
   ADMIN = "admin",

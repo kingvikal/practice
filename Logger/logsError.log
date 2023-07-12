@@ -26,3 +26,252 @@
     timestamp: '2023-07-12T06:46:06.118Z'
   }
 }
+{
+  level: 'error',
+  message: 'Error while creating category',
+  metadata: { timestamp: '2023-07-12T10:48:54.503Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /category/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/create',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '14f4e31f-b7aa-4786-a98b-f9c5951bb480',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '33'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/category/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 159
+    },
+    timestamp: '2023-07-12T10:48:54.523Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /product/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/create',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '25b81cbe-27d0-4c7f-8617-12a81774f547',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------728649565610391290887521',
+          'content-length': '76359'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/product/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 64
+    },
+    timestamp: '2023-07-12T11:19:03.987Z'
+  }
+}
+{
+  level: 'error',
+  message: 'error while creating product',
+  metadata: { timestamp: '2023-07-12T11:25:41.014Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /product/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/create',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '4e348e8e-6de5-4640-bae2-e9a16068a6bb',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------029352027457882512966193',
+          'content-length': '76359'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/product/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 412
+    },
+    timestamp: '2023-07-12T11:25:41.041Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /product/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/create',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'e658d377-2d53-4e62-8f07-ca01c839d89a',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------385259634665017644998363',
+          'content-length': '76359'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/product/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 16
+    },
+    timestamp: '2023-07-12T11:30:03.218Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /product/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/create',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '9745cce3-da11-4d6d-82f8-d605a07a591c',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------840465760452237812303602',
+          'content-length': '76359'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/product/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 39
+    },
+    timestamp: '2023-07-12T11:30:52.335Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /product/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/create',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'f6f4647b-2105-4c9d-8e93-76878f5f8f6b',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------745487152541721814813665',
+          'content-length': '76359'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/product/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 34
+    },
+    timestamp: '2023-07-12T11:35:14.016Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /product/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/create',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'e9cfaadc-ae14-4ad1-8318-c296f4e11264',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------183091710289022139558486',
+          'content-length': '76359'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/product/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 68
+    },
+    timestamp: '2023-07-12T12:11:37.663Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /product/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/create',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '1ba73f65-a848-449d-a2e0-70e1d3adc200',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------619325249356223638315128',
+          'content-length': '76359'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/product/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 26
+    },
+    timestamp: '2023-07-12T12:12:17.327Z'
+  }
+}

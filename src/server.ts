@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import userRoute from "./Routes/user.route";
 import documentRoute from "./Routes/document.route";
+import categoryRoute from "./Routes/category.route";
+import productRoute from "./Routes/product.route";
 import { AppDataSource } from "./Database/AppDataSource";
 import logger from "./Utils/logger";
 import expressWinston from "express-winston";
@@ -22,6 +24,8 @@ app.use("/upload", express.static("upload"));
 
 app.use("/user", userRoute);
 app.use("/document", documentRoute);
+app.use("/category", categoryRoute);
+app.use("/product", productRoute);
 
 app.listen(process.env.PORT || 8080, async () => {
   await AppDataSource.initialize()
