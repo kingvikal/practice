@@ -1,0 +1,28 @@
+{
+  level: 'error',
+  message: 'HTTP GET /user/get-all-use',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/get-all-use',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'd90848a9-9f2a-44f3-a7e5-980f20f73098',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/user/get-all-use',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 683
+    },
+    timestamp: '2023-07-12T06:46:06.118Z'
+  }
+}

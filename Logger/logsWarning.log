@@ -1,0 +1,86 @@
+{
+  level: 'error',
+  message: 'HTTP GET /user/get-all-use',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/get-all-use',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWthbGtoQGdtYWlsLmNvbSIsImlhdCI6MTY4OTA0OTI4NCwiZXhwIjoxNzIwNTg1Mjg0fQ.KwroMa7e50z7aLuJX40r6Bs1kZxTCdSrF-0vvCBcRIs',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'd90848a9-9f2a-44f3-a7e5-980f20f73098',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/user/get-all-use',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 683
+    },
+    timestamp: '2023-07-12T06:46:06.118Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /user/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/register',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'ba9f23bc-022c-453e-8882-1a03ae58f5c0',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------821906821025234430860421',
+          'content-length': '620240'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/user/register',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 372
+    },
+    timestamp: '2023-07-12T06:54:35.215Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /user/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/register',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'f3c11525-9c60-4b95-8fb2-f59260d600c4',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------615255262302022997119275',
+          'content-length': '620128'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/user/register',
+        query: {}
+      },
+      res: { statusCode: 422 },
+      responseTime: 66
+    },
+    timestamp: '2023-07-12T06:55:15.268Z'
+  }
+}
