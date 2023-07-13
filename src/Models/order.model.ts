@@ -6,7 +6,8 @@ import {
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { User } from "./user.model";
-import { OrderItem } from "./orderItem.model";
+import { Product } from "./product.model";
+import { OrderStatus } from "../Utils/enums";
 
 @Entity()
 export class Order {
@@ -19,6 +20,9 @@ export class Order {
   @Column()
   totalPrice: number;
 
+  @Column({ type: "enum", enum: OrderStatus, default: OrderStatus.PLACED })
+  status: OrderStatus;
+
   @Column()
   shippedTo: string;
 
@@ -28,6 +32,6 @@ export class Order {
   @ManyToOne(() => User, (user) => user.order)
   user: User;
 
-  @OneToMany(() => OrderItem, (orderItem) => orderItem.order)
-  orderItem: OrderItem[];
+  @ManyToOne(() => Product, (product) => product.order)
+  product: Product;
 }

@@ -51,10 +51,19 @@ export const createProduct = async (
 
 export const getProduct = async (req: Request, res: Response) => {
   try {
-    const getProduct = await productRepo.find({ relations: { rating: true } });
+    const { id } = req.params;
+    const average = await productRepo
+      .createQueryBuilder("p")
+      .leftJoinAndSelect("p.rating", "rating")
+      .addSelect("AVG(rating.rating) AS p_avg_rate")
+      .where({ id: id })
+      .groupBy("p.id")
+      .addGroupBy("rating.id")
+      .getOne();
 
-    if (getProduct) {
-      res.status(200).json({ data: getProduct });
+    if (average) {
+      await productRepo.save(average);
+      res.status(200).json({ data: average });
     } else {
       res.status(400).json({ message: "Cannot get product" });
     }

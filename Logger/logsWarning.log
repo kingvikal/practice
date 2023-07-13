@@ -461,3 +461,1194 @@
     timestamp: '2023-07-13T05:16:35.699Z'
   }
 }
+{
+  level: 'warn',
+  message: 'HTTP POST /rating/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/rating/create',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6Ik5pbWVzaCIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTY4OTIyNjgyMywiZXhwIjoxNzIwNzYyODIzfQ.eZpPD9WICz02BOozyceSiNXVMjEu0QzyxTd6kJnMyLM',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'efbaa060-25e7-421c-a907-9f1d6c729f2d',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '42'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/rating/create',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 28
+    },
+    timestamp: '2023-07-13T05:40:52.435Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /rating/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/rating/create',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6Ik5pbWVzaCIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTY4OTIyNjgyMywiZXhwIjoxNzIwNzYyODIzfQ.eZpPD9WICz02BOozyceSiNXVMjEu0QzyxTd6kJnMyLM',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'f597d245-6e9f-45d1-bbf2-096e4f7e7dd2',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '42'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/rating/create',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 101
+    },
+    timestamp: '2023-07-13T05:41:14.419Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '6090d6d0-b20f-46b1-afea-ad37cbd789de',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 5
+    },
+    timestamp: '2023-07-13T05:57:35.139Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'eac88320-1566-4674-ad3d-6335bc7897ce',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 3
+    },
+    timestamp: '2023-07-13T05:58:42.034Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting average',
+  metadata: { timestamp: '2023-07-13T06:11:10.589Z' }
+}
+{
+  level: 'error',
+  message: 'Error while getting average',
+  metadata: { timestamp: '2023-07-13T06:11:52.214Z' }
+}
+{
+  level: 'error',
+  message: 'Error while getting average',
+  metadata: { timestamp: '2023-07-13T06:12:18.089Z' }
+}
+{
+  level: 'error',
+  message: 'Error while getting average',
+  metadata: { timestamp: '2023-07-13T06:12:44.309Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '22d6d3ba-0a52-407e-890b-c6fd8f759215',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 97
+    },
+    timestamp: '2023-07-13T06:12:44.349Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting average',
+  metadata: { timestamp: '2023-07-13T06:13:24.266Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'd9f3d048-8ed9-42ae-8ad0-ec2b32fc8b50',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 71
+    },
+    timestamp: '2023-07-13T06:13:24.294Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting average',
+  metadata: { timestamp: '2023-07-13T06:14:33.636Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '95adb57f-b35a-4b48-b692-58934a1e616c',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 117
+    },
+    timestamp: '2023-07-13T06:14:33.670Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'c047fcaa-1806-450a-82d9-088b8d8773d4',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 247
+    },
+    timestamp: '2023-07-13T06:17:16.883Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'ad1963e6-f364-4c91-96fa-f7bae2cdb324',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 92
+    },
+    timestamp: '2023-07-13T06:18:28.867Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '6524c218-2bab-4c75-ab15-72410ddccda1',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 124
+    },
+    timestamp: '2023-07-13T06:27:13.667Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '03218209-28de-4f37-8223-b60d0aa18a61',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 93
+    },
+    timestamp: '2023-07-13T06:34:07.325Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '1ded549b-5287-4b2a-9602-0de3f909a717',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 128
+    },
+    timestamp: '2023-07-13T06:34:50.913Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '777172b5-1375-4411-8a03-77c6e5877ffb',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 83
+    },
+    timestamp: '2023-07-13T06:38:13.998Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '9961990c-651c-4509-99cf-fd67292a6d20',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 77
+    },
+    timestamp: '2023-07-13T06:38:45.175Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '71a50981-cd06-43a4-a572-ce955803beeb',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 91
+    },
+    timestamp: '2023-07-13T06:40:01.694Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'b8e4166a-0b46-43cc-8c8d-71d8478afdea',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 21
+    },
+    timestamp: '2023-07-13T06:40:09.369Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '5ffb8d15-62ce-46d2-b748-f9ffcc64c3b4',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 26
+    },
+    timestamp: '2023-07-13T06:41:49.430Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '210aac75-810d-4960-a302-625002b52206',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 103
+    },
+    timestamp: '2023-07-13T06:43:39.420Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'c2bc9fa3-56ef-43d5-b61c-11ab2fd97c46',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 142
+    },
+    timestamp: '2023-07-13T06:44:17.202Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '866b23a0-0c75-4fe9-93ca-6461e6a00546',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 81
+    },
+    timestamp: '2023-07-13T06:44:54.807Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'f6e479bf-81c7-4f42-ab5d-c6547f850fee',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 69
+    },
+    timestamp: '2023-07-13T06:45:27.292Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'd8a1e871-ed59-478f-bdbf-38f124bd03c8',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 72
+    },
+    timestamp: '2023-07-13T06:56:39.410Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '41caa009-2da7-4e5a-a634-758ca6a915c7',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 625
+    },
+    timestamp: '2023-07-13T07:00:31.813Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '3cbab855-db20-4463-89af-9c514e0b8c29',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 88
+    },
+    timestamp: '2023-07-13T07:04:19.397Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /product/get-avg/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get-avg/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'df78db72-200e-464e-b765-a7f2a34d8917',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get-avg/1',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 2
+    },
+    timestamp: '2023-07-13T07:08:17.727Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /product/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'd8f8840f-d9ab-4250-b9c9-62cba1aff40a',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 112
+    },
+    timestamp: '2023-07-13T07:08:26.545Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /product/get/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '29c6af4a-b73f-4e5f-ba23-5eb3a36c9926',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get/1',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 1
+    },
+    timestamp: '2023-07-13T07:08:51.140Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error in getting product',
+  metadata: { timestamp: '2023-07-13T07:10:11.475Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '2d402a7f-d820-4b77-95fe-2f80aa3499d6',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 122
+    },
+    timestamp: '2023-07-13T07:10:11.527Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error in getting product',
+  metadata: { timestamp: '2023-07-13T07:18:17.592Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '894028ac-0530-4e60-83a8-8b45687b6f7b',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 85
+    },
+    timestamp: '2023-07-13T07:18:17.627Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error in getting product',
+  metadata: { timestamp: '2023-07-13T08:20:15.539Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '7c082d33-6135-459a-98d8-c39e406cb44c',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 75
+    },
+    timestamp: '2023-07-13T08:20:15.579Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error in getting product',
+  metadata: { timestamp: '2023-07-13T08:21:49.632Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '3e18c111-42ce-437a-9e22-293ce15c0ced',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 82
+    },
+    timestamp: '2023-07-13T08:21:49.679Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error in getting product',
+  metadata: { timestamp: '2023-07-13T08:30:07.715Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '45fab29a-d4bf-4bf1-a835-068e6f6d021f',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 52
+    },
+    timestamp: '2023-07-13T08:30:07.731Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error in getting product',
+  metadata: { timestamp: '2023-07-13T08:30:08.876Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get/1',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get/1',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '0f94d081-7aa6-4041-9e9c-22db93266322',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get/1',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 6
+    },
+    timestamp: '2023-07-13T08:30:08.883Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error in getting product',
+  metadata: { timestamp: '2023-07-13T08:44:08.702Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get/2',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get/2',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'a4a9c107-7334-4a22-b4df-e3a575af0e84',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get/2',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 421
+    },
+    timestamp: '2023-07-13T08:44:08.728Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error in getting product',
+  metadata: { timestamp: '2023-07-13T08:45:04.975Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /product/get/2',
+  metadata: {
+    meta: {
+      req: {
+        url: '/product/get/2',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'a6ddf281-e9e0-4b3f-afa2-839429e83009',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/product/get/2',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 118
+    },
+    timestamp: '2023-07-13T08:45:05.008Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /order/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/create',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6Ik5pbWVzaCIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTY4OTIyNjgyMywiZXhwIjoxNzIwNzYyODIzfQ.eZpPD9WICz02BOozyceSiNXVMjEu0QzyxTd6kJnMyLM',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '08d279b8-1cf2-4e11-ab59-dc4165cde00c',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '51'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/create',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 1
+    },
+    timestamp: '2023-07-13T10:44:43.229Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Cannot create order',
+  metadata: { timestamp: '2023-07-13T10:47:06.447Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/create',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6Ik5pbWVzaCIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTY4OTIyNjgyMywiZXhwIjoxNzIwNzYyODIzfQ.eZpPD9WICz02BOozyceSiNXVMjEu0QzyxTd6kJnMyLM',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'baffe276-890a-4e75-9c0c-ce4c41200590',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '51'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 25
+    },
+    timestamp: '2023-07-13T10:47:06.482Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Cannot create order',
+  metadata: { timestamp: '2023-07-13T10:47:32.186Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/create',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6Ik5pbWVzaCIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTY4OTIyNjgyMywiZXhwIjoxNzIwNzYyODIzfQ.eZpPD9WICz02BOozyceSiNXVMjEu0QzyxTd6kJnMyLM',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '2b94a563-050b-41d6-9e8e-c507cf07d01f',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '51'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 36
+    },
+    timestamp: '2023-07-13T10:47:32.218Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Cannot create order',
+  metadata: { timestamp: '2023-07-13T10:48:00.356Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/create',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6Ik5pbWVzaCIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTY4OTIyNjgyMywiZXhwIjoxNzIwNzYyODIzfQ.eZpPD9WICz02BOozyceSiNXVMjEu0QzyxTd6kJnMyLM',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '5e51a5ab-819b-4dd5-b976-889004626d9a',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '51'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 50
+    },
+    timestamp: '2023-07-13T10:48:00.396Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Cannot create order',
+  metadata: { timestamp: '2023-07-13T10:49:21.565Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/create',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6Ik5pbWVzaCIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTY4OTIyNjgyMywiZXhwIjoxNzIwNzYyODIzfQ.eZpPD9WICz02BOozyceSiNXVMjEu0QzyxTd6kJnMyLM',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '02e8ee48-b973-488d-a4e7-372741e2607f',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '51'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 36
+    },
+    timestamp: '2023-07-13T10:49:21.592Z'
+  }
+}

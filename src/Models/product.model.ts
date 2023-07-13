@@ -9,7 +9,7 @@ import {
 } from "typeorm";
 import { Category } from "./category.model";
 import { Rating } from "./rating.model";
-import { OrderItem } from "./orderItem.model";
+import { Order } from "./order.model";
 
 @Entity()
 export class Product {
@@ -48,6 +48,9 @@ export class Product {
   })
   category: Category;
 
-  @OneToMany(() => OrderItem, (orderItem) => orderItem.product)
-  orderItem: OrderItem[];
+  @OneToMany(() => Order, (order) => order.product)
+  order: Order[];
+
+  @Column({ nullable: true, name: "avg_rate" })
+  avgRate: number;
 }

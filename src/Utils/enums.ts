@@ -19,3 +19,11 @@ export enum CategoryType {
   SWEATER = "sweater",
   JACKET = "jacket",
 }
+
+export enum OrderStatus {
+  PLACED = "placed",
+  ACCEPTED = "accepted",
+  DELIVERING = "delivering",
+  DELIVERED = "delivered",
+  COMPLETED = "completed",
+}

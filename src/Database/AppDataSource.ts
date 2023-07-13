@@ -6,7 +6,6 @@ import { Product } from "../Models/product.model";
 import { Category } from "../Models/category.model";
 import { Rating } from "../Models/rating.model";
 import { Order } from "../Models/order.model";
-import { OrderItem } from "../Models/orderItem.model";
 
 dotenv.config();
 
@@ -18,5 +17,5 @@ export const AppDataSource = new DataSource({
   username: process.env.DB_USER,
   database: process.env.DB_DATABASE,
   synchronize: true,
-  entities: [User, UserDocument, Product, Category, Rating, Order, OrderItem],
+  entities: [User, UserDocument, Product, Category, Rating, Order],
 });
