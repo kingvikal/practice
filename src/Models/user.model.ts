@@ -8,6 +8,7 @@ import {
 } from "typeorm";
 import { Product } from "./product.model";
 import { Rating } from "./rating.model";
+import { Order } from "./order.model";
 
 enum UserRole {
   ADMIN = "admin",
@@ -45,6 +46,9 @@ export class User {
 
   @OneToMany(() => Rating, (rating) => rating.user)
   rating: Rating[];
+
+  @OneToMany(() => Order, (order) => order.user)
+  order: Order[];
 
   @Column({ type: "enum", enum: UserRole, default: UserRole.USER })
   userType: UserRole;

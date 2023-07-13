@@ -48,3 +48,18 @@ export const createProduct = async (
     return res.status(500).json(err);
   }
 };
+
+export const getProduct = async (req: Request, res: Response) => {
+  try {
+    const getProduct = await productRepo.find({ relations: { rating: true } });
+
+    if (getProduct) {
+      res.status(200).json({ data: getProduct });
+    } else {
+      res.status(400).json({ message: "Cannot get product" });
+    }
+  } catch (err) {
+    logger.error("Error in getting product");
+    res.status(500).json(err);
+  }
+};

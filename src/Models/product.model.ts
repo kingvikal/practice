@@ -1,12 +1,15 @@
 import {
   Column,
+  CreateDateColumn,
   Entity,
   ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
+  UpdateDateColumn,
 } from "typeorm";
 import { Category } from "./category.model";
 import { Rating } from "./rating.model";
+import { OrderItem } from "./orderItem.model";
 
 @Entity()
 export class Product {
@@ -25,6 +28,12 @@ export class Product {
   @Column()
   unit: number;
 
+  @CreateDateColumn()
+  createdAt: Date;
+
+  @UpdateDateColumn()
+  updatedAt: Date;
+
   @Column()
   totalPrice: number;
 
@@ -38,4 +47,7 @@ export class Product {
     onDelete: "CASCADE",
   })
   category: Category;
+
+  @OneToMany(() => OrderItem, (orderItem) => orderItem.product)
+  orderItem: OrderItem[];
 }

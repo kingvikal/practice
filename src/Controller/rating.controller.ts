@@ -15,7 +15,9 @@ const userRepo = AppDataSource.getRepository(User);
 export const createRating = async (req: UserRequest, res: Response) => {
   try {
     const { rating, productId } = req.body;
-    const { userId } = req.user;
+    const userId = req.user.id;
+
+    console.log({ userId });
 
     const product = await productRepo.findOne({ where: { id: productId } });
 
@@ -29,6 +31,7 @@ export const createRating = async (req: UserRequest, res: Response) => {
         .status(400)
         .json({ message: "Rating cannot be less than 1 or more than 5" });
     }
+
     const existingRating = await ratingRepo.findOne({
       where: { user: { id: userId }, product: { id: productId } },
     });
@@ -38,12 +41,14 @@ export const createRating = async (req: UserRequest, res: Response) => {
         .status(400)
         .json({ error: "User has already rated this product." });
     }
+
     if (!product || !user) {
       return res.status(400).json({ message: "Product or User not Found" });
     }
 
     let result;
     if (product && user) {
+      console.log({ user });
       const ratings = new Rating();
       ratings.rating = rating;
       ratings.product = product;
