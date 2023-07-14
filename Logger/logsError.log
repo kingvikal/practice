@@ -1189,3 +1189,485 @@
     timestamp: '2023-07-13T10:49:21.592Z'
   }
 }
+{
+  level: 'error',
+  message: 'Error while getting',
+  metadata: { timestamp: '2023-07-14T10:08:47.582Z' }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '5e122b3d-87ec-4a65-9d37-71e07a71a8cc',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 17
+    },
+    timestamp: '2023-07-14T10:08:47.608Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting "c" alias was not found. Maybe you forgot to join it?',
+  metadata: {
+    stack: 'TypeORMError: "c" alias was not found. Maybe you forgot to join it?\n' +
+      '    at QueryExpressionMap.findAliasByName (F:\\Scratch Project\\node_modules\\src\\query-builder\\QueryExpressionMap.ts:447:19)\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:167:45)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:119:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71',
+    timestamp: '2023-07-14T10:09:17.687Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '17a88f58-7b64-4a82-b456-6acb9074e946',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 180
+    },
+    timestamp: '2023-07-14T10:09:17.722Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting Relation with property path product in entity was not found.',
+  metadata: {
+    stack: 'TypeORMError: Relation with property path product in entity was not found.\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:187:23)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:121:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71\n' +
+      '    at new Promise (<anonymous>)',
+    timestamp: '2023-07-14T10:09:44.066Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '36453f4f-55a4-4313-bd7d-bf7e43f675b2',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 79
+    },
+    timestamp: '2023-07-14T10:09:44.120Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting Relation with property path product in entity was not found.',
+  metadata: {
+    stack: 'TypeORMError: Relation with property path product in entity was not found.\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:187:23)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:121:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71\n' +
+      '    at new Promise (<anonymous>)',
+    timestamp: '2023-07-14T10:27:23.774Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '422e2b80-17c3-417d-ab3e-ec6f54e1922f',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 79
+    },
+    timestamp: '2023-07-14T10:27:23.836Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting Relation with property path childCategories in entity was not found.',
+  metadata: {
+    stack: 'TypeORMError: Relation with property path childCategories in entity was not found.\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:187:23)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:120:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71\n' +
+      '    at new Promise (<anonymous>)',
+    timestamp: '2023-07-14T10:43:34.780Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '797413e8-59ce-487c-b481-7300fc9ea899',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 60
+    },
+    timestamp: '2023-07-14T10:43:34.828Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting Relation with property path childCategories in entity was not found.',
+  metadata: {
+    stack: 'TypeORMError: Relation with property path childCategories in entity was not found.\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:187:23)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:120:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71\n' +
+      '    at new Promise (<anonymous>)',
+    timestamp: '2023-07-14T11:21:20.196Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'bc26b52c-2160-43b5-9503-476d1fbad93f',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 111
+    },
+    timestamp: '2023-07-14T11:21:20.258Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting Relation with property path childCategories in entity was not found.',
+  metadata: {
+    stack: 'TypeORMError: Relation with property path childCategories in entity was not found.\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:187:23)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:120:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71\n' +
+      '    at new Promise (<anonymous>)',
+    timestamp: '2023-07-14T11:23:53.473Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '53b3cd65-f77f-4bad-8dd1-142a8511c3a2',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 68
+    },
+    timestamp: '2023-07-14T11:23:53.519Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting Relation with property path childCategories in entity was not found.',
+  metadata: {
+    stack: 'TypeORMError: Relation with property path childCategories in entity was not found.\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:187:23)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:120:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71\n' +
+      '    at new Promise (<anonymous>)',
+    timestamp: '2023-07-14T11:24:39.252Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '783cb7e2-a5d4-4399-ac31-b4d138d6e347',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 103
+    },
+    timestamp: '2023-07-14T11:24:39.335Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting Relation with property path childCategories in entity was not found.',
+  metadata: {
+    stack: 'TypeORMError: Relation with property path childCategories in entity was not found.\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:187:23)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:120:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71\n' +
+      '    at new Promise (<anonymous>)',
+    timestamp: '2023-07-14T11:26:14.824Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '0b715ebd-cf95-48b5-8d15-53892806fdb7',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 82
+    },
+    timestamp: '2023-07-14T11:26:14.876Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting Relation with property path avgRate in entity was not found.',
+  metadata: {
+    stack: 'TypeORMError: Relation with property path avgRate in entity was not found.\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:187:23)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:121:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71\n' +
+      '    at new Promise (<anonymous>)',
+    timestamp: '2023-07-14T11:48:19.559Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'abee64ab-f935-4ce6-93f6-aabed8d2f0e4',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 58
+    },
+    timestamp: '2023-07-14T11:48:19.596Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Error while getting Relation with property path avg_rate in entity was not found.',
+  metadata: {
+    stack: 'TypeORMError: Relation with property path avg_rate in entity was not found.\n' +
+      '    at JoinAttribute.getValue (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:187:23)\n' +
+      '    at JoinAttribute.get relation [as relation] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:191:53)\n' +
+      '    at JoinAttribute.get metadata [as metadata] (F:\\Scratch Project\\node_modules\\src\\query-builder\\JoinAttribute.ts:203:18)\n' +
+      '    at SelectQueryBuilder.join (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:2038:53)\n' +
+      '    at SelectQueryBuilder.leftJoin (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:467:14)\n' +
+      '    at SelectQueryBuilder.leftJoinAndSelect (F:\\Scratch Project\\node_modules\\src\\query-builder\\SelectQueryBuilder.ts:607:14)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:121:8\n' +
+      '    at Generator.next (<anonymous>)\n' +
+      '    at F:\\Scratch Project\\src\\Controller\\category.controller.ts:8:71\n' +
+      '    at new Promise (<anonymous>)',
+    timestamp: '2023-07-14T11:48:52.931Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /category/get',
+  metadata: {
+    meta: {
+      req: {
+        url: '/category/get',
+        headers: {
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'a497fdf2-3097-4612-9461-94d3a4fb929a',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/category/get',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 62
+    },
+    timestamp: '2023-07-14T11:48:52.982Z'
+  }
+}

@@ -2,6 +2,7 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  JoinTable,
   ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
@@ -46,7 +47,8 @@ export class Product {
   @ManyToOne(() => Category, (category) => category.product, {
     onDelete: "CASCADE",
   })
-  category: Category;
+  @JoinTable()
+  parentCategory: Category;
 
   @OneToMany(() => Order, (order) => order.product)
   order: Order[];

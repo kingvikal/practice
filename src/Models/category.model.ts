@@ -1,15 +1,30 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
-import { CategoryType } from "../Utils/enums";
+import {
+  Column,
+  Entity,
+  JoinTable,
+  ManyToOne,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from "typeorm";
 import { Product } from "./product.model";
+// import { CategoryType } from "../Utils/enums";
+// import { Product } from "./product.model";
 
 @Entity()
 export class Category {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ type: "enum", enum: CategoryType })
-  categoryType: CategoryType;
+  @Column({ nullable: true })
+  categoryName: string;
 
-  @OneToMany(() => Product, (product) => product.category)
+  @ManyToOne((type) => Category, (category) => category.childCategory)
+  parentCategory: Category;
+
+  @OneToMany((type) => Category, (category) => category.parentCategory)
+  childCategory: Category[];
+
+  @OneToMany(() => Product, (product) => product.parentCategory)
+  @JoinTable()
   product: Product[];
 }

@@ -17,16 +17,17 @@ export const createProduct = async (
       description: string;
       unit: number;
       photo: any;
-      categoryId: number;
+      id: number;
     }
   >,
   res: Response
 ) => {
   try {
-    const { categoryId, productName, price, description, unit, photo } =
-      req.body;
+    const { id, productName, price, description, unit, photo } = req.body;
 
-    const category = await categoryRepo.findOne({ where: { id: categoryId } });
+    const category = await categoryRepo.findOne({
+      where: { id },
+    });
 
     const product = new Product();
     product.description = description;
@@ -35,7 +36,7 @@ export const createProduct = async (
     product.unit = unit;
     product.totalPrice = unit * price;
     product.photo = req.file?.path || photo;
-    if (category) product.category = category;
+    if (category) product.parentCategory = category;
 
     const data = await productRepo.save(product);
     if (data) {
