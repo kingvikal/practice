@@ -1,5 +1,6 @@
 import {
   Column,
+  CreateDateColumn,
   Entity,
   ManyToOne,
   OneToMany,
@@ -8,30 +9,32 @@ import {
 import { User } from "./user.model";
 import { Product } from "./product.model";
 import { OrderStatus } from "../Utils/enums";
+import { ShippingDetails } from "../Utils/interface";
+import { OrderItem } from "./orderItem.model";
 
 @Entity()
 export class Order {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ default: new Date() })
+  @CreateDateColumn()
   orderDate: Date;
 
-  @Column()
+  @Column({ nullable: true })
   totalPrice: number;
 
   @Column({ type: "enum", enum: OrderStatus, default: OrderStatus.PLACED })
   status: OrderStatus;
 
-  @Column()
-  shippedTo: string;
+  @Column({ nullable: true })
+  shippingCharge: number;
 
-  @Column()
-  country: string;
+  @Column("jsonb", { nullable: true })
+  shippingAddress: ShippingDetails;
 
   @ManyToOne(() => User, (user) => user.order)
   user: User;
 
-  @ManyToOne(() => Product, (product) => product.order)
-  product: Product;
+  @OneToMany(() => OrderItem, (orderItem) => orderItem.order)
+  orderItem: OrderItem[];
 }

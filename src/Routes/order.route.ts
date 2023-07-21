@@ -1,15 +1,17 @@
 import { Router } from "express";
 import {
   changeStatusAdmin,
-  createOrder,
+  getOrderDetail,
+  placeOrder,
   trackOrder,
 } from "../Controller/order.controller";
 import { IsAdmin, IsAuth } from "../middleware/auth";
 
 const route = Router();
 
-route.post("/create", createOrder);
+route.post("/place-order", IsAuth, placeOrder);
 route.put("/change-status", IsAuth, IsAdmin, changeStatusAdmin);
 route.get("/track-order", IsAuth, trackOrder);
+route.get("/order-detail", getOrderDetail);
 
 export default route;

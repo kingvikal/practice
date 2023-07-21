@@ -11,6 +11,7 @@ import {
 import { Category } from "./category.model";
 import { Rating } from "./rating.model";
 import { Order } from "./order.model";
+import { OrderItem } from "./orderItem.model";
 
 @Entity()
 export class Product {
@@ -50,8 +51,8 @@ export class Product {
   @JoinTable()
   parentCategory: Category;
 
-  @OneToMany(() => Order, (order) => order.product)
-  order: Order[];
+  @OneToMany(() => OrderItem, (orderItem) => orderItem.product)
+  orderItem: OrderItem[];
 
   @Column({ nullable: true, name: "avg_rate" })
   avgRate: number;

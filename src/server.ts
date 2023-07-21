@@ -8,6 +8,8 @@ import categoryRoute from "./Routes/category.route";
 import productRoute from "./Routes/product.route";
 import ratingRoute from "./Routes/rating.route";
 import orderRoute from "./Routes/order.route";
+import cartItemRoute from "./Routes/cartItem.route";
+import cartRoute from "./Routes/cart.route";
 import { AppDataSource } from "./Database/AppDataSource";
 import logger from "./Utils/logger";
 import expressWinston from "express-winston";
@@ -30,6 +32,8 @@ app.use("/category", categoryRoute);
 app.use("/product", productRoute);
 app.use("/rating", ratingRoute);
 app.use("/order", orderRoute);
+app.use("/cartItem", cartItemRoute);
+app.use("/cart", cartRoute);
 
 app.listen(process.env.PORT || 8080, async () => {
   await AppDataSource.initialize()

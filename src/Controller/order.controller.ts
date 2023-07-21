@@ -5,10 +5,16 @@ import { AppDataSource } from "../Database/AppDataSource";
 import { User } from "../Models/user.model";
 import { Product } from "../Models/product.model";
 import { Order } from "../Models/order.model";
+import { Cart } from "../Models/cart.model";
+import { OrderItem } from "../Models/orderItem.model";
+import { CartItem } from "../Models/cartItems.model";
 
 const userRepo = AppDataSource.getRepository(User);
 const productRepo = AppDataSource.getRepository(Product);
 const orderRepo = AppDataSource.getRepository(Order);
+const cartRepo = AppDataSource.getRepository(Cart);
+const orderItemRepo = AppDataSource.getRepository(Order);
+const cartItemRepo = AppDataSource.getRepository(CartItem);
 
 interface UserRequest extends Request {
   user?: any;
@@ -21,38 +27,56 @@ interface OrderField extends UserRequest {
   userId: number;
   productId: number;
 }
-export const createOrder = async (req: UserRequest, res: Response) => {
+
+export const placeOrder = async (req: UserRequest, res: Response) => {
   try {
-    const { country, productId } = req.body;
-    const id = req.user;
+    const { cartId, shippingAddress, shippingCharge } = req.body;
+    const { id } = req.user;
 
-    const user = await userRepo.findOne({ where: { id: id } });
+    const cart = await cartRepo.findOne({
+      where: { id: cartId, user: id },
+      relations: { user: true, cartItem: true },
+    });
+    if (!cart) {
+      return res.status(400).json({ message: "cannot find cart" });
+    }
 
-    const product = await productRepo.findOne({ where: { id: productId } });
+    const totalAmount = cart.cartItem.reduce(
+      (total, item) => total + item.total,
+      0
+    );
+    let savedOrder;
 
-    let result;
-    if (user && product) {
+    if (cart) {
       const order = new Order();
-      order.shippedTo = user.email;
-      order.status = OrderStatus.PLACED;
-      order.country = country;
-      order.totalPrice = product.unit * product.price;
-      order.user = user;
-      order.product = product;
+      order.orderDate = new Date();
+      order.shippingAddress = shippingAddress;
+      order.shippingCharge = shippingCharge;
+      order.status = OrderStatus.ACCEPTED;
+      order.totalPrice = totalAmount;
+      order.user = cart.user;
 
-      result = await orderRepo.save(order);
+      const orderItem = new OrderItem();
+      orderItem.product = cart.cartItem[0].product;
+      orderItem.quantity = cart.cartItem[0].quantity;
+      orderItem.total = cart.cartItem[0].total;
+
+      order.orderItem = [orderItem];
+
+      savedOrder = await orderRepo.save(order);
     }
 
-    if (result) {
-      res.status(200).json({ message: "Order placed successfully" });
-    } else {
-      res.status(400).json({ message: "Cannot place Order" });
+    if (savedOrder) {
+      return res.status(200).json({
+        message: "Order placed successfully",
+        savedOrder,
+      });
     }
-  } catch (err) {
-    console.log(err);
-
-    logger.error("Cannot create order");
-    res.status(500).json(err);
+  } catch (error) {
+    console.error(error);
+    return res
+      .status(500)
+      .json({ message: "An error occurred while placing the order." });
   }
 };
 
@@ -97,5 +121,19 @@ export const trackOrder = async (req: Request, res: Response) => {
   } catch (err) {
     logger.error("Error while tracking order");
     res.status(500).json(err);
+  }
+};
+
+export const getOrderDetail = async (req: Request, res: Response) => {
+  try {
+    const getOrder = await orderRepo.find({ relations: { orderItem: true } });
+
+    if (getOrder) {
+      return res.status(200).json({ order: getOrder });
+    } else {
+      return res.status(400).json({ message: "Cannot find order" });
+    }
+  } catch (err) {
+    return res.status(500).json(err);
   }
 };

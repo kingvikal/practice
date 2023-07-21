@@ -1671,3 +1671,810 @@
     timestamp: '2023-07-14T11:48:52.982Z'
   }
 }
+{
+  level: 'error',
+  message: 'HTTP POST /cartItem/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/cartItem/create',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '90f91621-51fb-4a0f-af77-1cafef9dfc78',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '48'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/cartItem/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 115
+    },
+    timestamp: '2023-07-20T07:00:20.659Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /cartItem/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/cartItem/create',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'f295df03-c3ae-4dab-a504-3b8b1b768407',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '48'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/cartItem/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 71
+    },
+    timestamp: '2023-07-20T07:00:48.138Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '4fe38298-308c-4923-a273-fdddf1ecf84a',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '120'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 21
+    },
+    timestamp: '2023-07-20T11:14:27.711Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'aecdcdd8-3040-47f3-8192-c72730adc630',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '120'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 30
+    },
+    timestamp: '2023-07-20T11:15:01.235Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'b8ffeb8a-5ff5-40b6-b8e7-2f924cbd3f6a',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '120'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 31
+    },
+    timestamp: '2023-07-20T11:18:24.300Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '5ba5f7ac-040d-44c0-9225-6be47fa3c3a3',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '138'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 38
+    },
+    timestamp: '2023-07-20T11:25:21.575Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '5830fc74-77bc-49c8-9947-fcb22ecc3ba9',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '138'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 34
+    },
+    timestamp: '2023-07-20T11:28:31.112Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '2e1708c9-267a-492e-a392-afe178feb2bc',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '138'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 162
+    },
+    timestamp: '2023-07-20T11:30:08.720Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'aa8c0778-f695-4cd2-aa8f-8a84fe45aa82',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 156
+    },
+    timestamp: '2023-07-20T11:32:20.409Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'df8f57eb-5f84-4426-8497-bbddd9087cf3',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 144
+    },
+    timestamp: '2023-07-20T11:34:30.299Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '644b4b54-ac80-4871-aaa0-908886e9de08',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 103
+    },
+    timestamp: '2023-07-20T11:35:22.505Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'c6b9253a-d0ca-44b9-a3ff-ba28238dbc94',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 245
+    },
+    timestamp: '2023-07-20T11:38:15.980Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '337467f8-3322-45e7-9930-302be09a4e46',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 192
+    },
+    timestamp: '2023-07-20T11:46:56.579Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /cartItem/create',
+  metadata: {
+    meta: {
+      req: {
+        url: '/cartItem/create',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '38cbfc6a-a683-42f0-bc22-6af581d6b157',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '48'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/cartItem/create',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 34
+    },
+    timestamp: '2023-07-20T11:55:18.675Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'a0f52632-0dbf-436f-a4a3-3dace80d056e',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 248
+    },
+    timestamp: '2023-07-20T12:37:12.547Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '34dbdee5-a69c-4afe-92d8-49024cdf5520',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 131
+    },
+    timestamp: '2023-07-20T12:38:56.107Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '54868dac-3fe4-4668-a0d3-484c426e53b8',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 140
+    },
+    timestamp: '2023-07-20T12:40:01.098Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'ad995622-1d63-425d-804f-b9bb080b56ee',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 176
+    },
+    timestamp: '2023-07-20T12:40:56.794Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '816746a1-1c6a-4724-9f8e-715128c7408e',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 135
+    },
+    timestamp: '2023-07-20T12:45:08.071Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '317f8ba5-a2f7-4845-b2b9-3d6bcb70c509',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 589
+    },
+    timestamp: '2023-07-21T04:33:10.126Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '9449b29d-09a3-4d89-a193-e373b7af7a7d',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 138
+    },
+    timestamp: '2023-07-21T04:40:53.454Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'f050dad7-5e3a-46e8-9ab2-00411b2e02a6',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '212'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 124
+    },
+    timestamp: '2023-07-21T04:41:25.927Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'e92f75c0-a785-435c-a9ac-819430012a14',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '211'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 102
+    },
+    timestamp: '2023-07-21T04:59:29.054Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'fd81c168-2ecd-419d-936f-b8bb76615a13',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '211'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 109
+    },
+    timestamp: '2023-07-21T05:00:32.666Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '3c3eb6d0-4714-424c-b147-53f58450a699',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '211'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 157
+    },
+    timestamp: '2023-07-21T05:01:10.338Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '8adbe12d-b779-4cab-9b49-725d29093536',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '211'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 169
+    },
+    timestamp: '2023-07-21T05:08:40.994Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /order/place-order',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/place-order',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '1b755e3e-c2c9-4a3d-9b62-fbec317999ae',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '211'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/order/place-order',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 294
+    },
+    timestamp: '2023-07-21T07:02:39.524Z'
+  }
+}
