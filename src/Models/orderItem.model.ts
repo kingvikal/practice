@@ -1,5 +1,4 @@
 import {
-  Collection,
   Column,
   Entity,
   JoinColumn,
@@ -20,10 +19,16 @@ export class OrderItem {
   @ManyToOne(() => Product)
   product: Product;
 
+  @Column({ nullable: true })
+  productName: string;
+
   @Column()
   quantity: number;
 
   @ManyToOne(() => Order)
   @JoinColumn()
   order: Order;
+
+  @Column("json", { nullable: true })
+  productSnapshot: { productId: number; productName: string; price: number };
 }

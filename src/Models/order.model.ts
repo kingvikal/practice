@@ -34,7 +34,4 @@ export class Order {
 
   @ManyToOne(() => User, (user) => user.order)
   user: User;
-
-  @OneToMany(() => OrderItem, (orderItem) => orderItem.order)
-  orderItem: OrderItem[];
 }

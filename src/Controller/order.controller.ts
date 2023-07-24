@@ -1,21 +1,18 @@
 import { Request, Response } from "express";
 import logger from "../Utils/logger";
+import nodemailer from "nodemailer";
 import { OrderStatus } from "../Utils/enums";
 import { AppDataSource } from "../Database/AppDataSource";
-import { User } from "../Models/user.model";
-import { Product } from "../Models/product.model";
 import { Order } from "../Models/order.model";
 import { Cart } from "../Models/cart.model";
 import { OrderItem } from "../Models/orderItem.model";
-import { CartItem } from "../Models/cartItems.model";
+import { User } from "../Models/user.model";
+import { transporter } from "../Utils/mail.service";
 
-const userRepo = AppDataSource.getRepository(User);
-const productRepo = AppDataSource.getRepository(Product);
 const orderRepo = AppDataSource.getRepository(Order);
 const cartRepo = AppDataSource.getRepository(Cart);
-const orderItemRepo = AppDataSource.getRepository(Order);
-const cartItemRepo = AppDataSource.getRepository(CartItem);
-
+const orderItemRepo = AppDataSource.getRepository(OrderItem);
+const userRepo = AppDataSource.getRepository(User);
 interface UserRequest extends Request {
   user?: any;
 }
@@ -35,7 +32,7 @@ export const placeOrder = async (req: UserRequest, res: Response) => {
 
     const cart = await cartRepo.findOne({
       where: { id: cartId, user: id },
-      relations: { user: true, cartItem: true },
+      relations: { cartItem: true },
     });
     if (!cart) {
       return res.status(400).json({ message: "cannot find cart" });
@@ -57,13 +54,20 @@ export const placeOrder = async (req: UserRequest, res: Response) => {
       order.user = cart.user;
 
       const orderItem = new OrderItem();
+      orderItem.productName = cart.cartItem[0].product.productName;
       orderItem.product = cart.cartItem[0].product;
       orderItem.quantity = cart.cartItem[0].quantity;
       orderItem.total = cart.cartItem[0].total;
-
-      order.orderItem = [orderItem];
+      orderItem.productSnapshot = {
+        productId: cart.cartItem[0].product.id,
+        productName: cart.cartItem[0].product.productName,
+        price: cart.cartItem[0].product.price,
+      };
 
       savedOrder = await orderRepo.save(order);
+
+      orderItem.order = savedOrder;
+      await orderItemRepo.save(orderItem);
     }
 
     if (savedOrder) {
@@ -126,7 +130,7 @@ export const trackOrder = async (req: Request, res: Response) => {
 
 export const getOrderDetail = async (req: Request, res: Response) => {
   try {
-    const getOrder = await orderRepo.find({ relations: { orderItem: true } });
+    const getOrder = await orderRepo.find({});
 
     if (getOrder) {
       return res.status(200).json({ order: getOrder });
@@ -134,6 +138,43 @@ export const getOrderDetail = async (req: Request, res: Response) => {
       return res.status(400).json({ message: "Cannot find order" });
     }
   } catch (err) {
+    return res.status(500).json(err);
+  }
+};
+
+export const sendDeliveryEmail = async (req: Request, res: Response) => {
+  try {
+    const { status } = req.body;
+    const { id }: any = req.params;
+
+    const order = await orderRepo.findOne({
+      where: { id: id },
+    });
+
+    const updateStatus = await orderRepo
+      .createQueryBuilder("order")
+      .leftJoinAndSelect("order.user", "user")
+      .update(Order)
+      .set({ status: status })
+      .where({ id: id })
+      .execute();
+
+    const mailOptions = {
+      from: process.env.EMAIL,
+      to: order?.shippingAddress.shippedTo,
+      subject: "Order Delivery Status",
+      text: `Your order with ID ${order?.id} is out for delivery. Thank you for shopping with us!`,
+    };
+
+    const mailSend = await transporter.sendMail(mailOptions);
+
+    if (mailSend && order?.status === OrderStatus.DELIVERING) {
+      return res.status(200).json({ message: "Mail send Successfully" });
+    } else {
+      return res.status(400).json({ message: "Problem while sending mail" });
+    }
+  } catch (err) {
+    console.log(err);
     return res.status(500).json(err);
   }
 };

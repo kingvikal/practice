@@ -3906,3 +3906,213 @@
     timestamp: '2023-07-21T07:02:39.524Z'
   }
 }
+{
+  level: 'warn',
+  message: 'HTTP PUT /order/send-email/49',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/send-email/49',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '5283f06f-b7d4-4b08-8822-24a694f8d3bf',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '32'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/order/send-email/49',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 6
+    },
+    timestamp: '2023-07-24T06:00:52.337Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP PUT /order/send-email/49',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/send-email/49',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '82656e02-4d11-443a-8743-af920dcc328e',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '32'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/order/send-email/49',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 121
+    },
+    timestamp: '2023-07-24T06:01:19.994Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP PUT /order/send-email/49',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/send-email/49',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjg5MzEyMDU5LCJleHAiOjE3MjA4NDgwNTl9.OOoGVOWxgJOr1TFSSCIAl3RMbBw72Dnxdg_oMMsuoxc',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '8189d8c6-9e11-480f-90c5-b6e43d230a84',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '32'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/order/send-email/49',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 73
+    },
+    timestamp: '2023-07-24T06:02:04.437Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP PUT /order/send-email/49',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/send-email/49',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjkwMTc4NTU4LCJleHAiOjE3MjE3MTQ1NTh9.YmgDiHt60WW_C12kLYgnDPJDvBteCTl_gPlUA-02L_8',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '06ee076a-68fd-430a-bd29-6e92ea850fb2',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '32'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/order/send-email/49',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 129
+    },
+    timestamp: '2023-07-24T06:02:56.114Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP PUT /order/send-email/49',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/send-email/49',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjkwMTc4NTU4LCJleHAiOjE3MjE3MTQ1NTh9.YmgDiHt60WW_C12kLYgnDPJDvBteCTl_gPlUA-02L_8',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'a1cdbe47-76d1-4305-b37a-23703beb5352',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '32'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/order/send-email/49',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 137
+    },
+    timestamp: '2023-07-24T06:03:33.211Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP PUT /order/send-email/49',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/send-email/49',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjkwMTc4NTU4LCJleHAiOjE3MjE3MTQ1NTh9.YmgDiHt60WW_C12kLYgnDPJDvBteCTl_gPlUA-02L_8',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '2e1d9360-74e6-450b-a8a0-2b87a49c88a7',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '32'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/order/send-email/49',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 110
+    },
+    timestamp: '2023-07-24T06:04:00.261Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /order/send-email/50',
+  metadata: {
+    meta: {
+      req: {
+        url: '/order/send-email/50',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjkwMTc4NTU4LCJleHAiOjE3MjE3MTQ1NTh9.YmgDiHt60WW_C12kLYgnDPJDvBteCTl_gPlUA-02L_8',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '612c0492-8187-4dfe-a79e-0be54dbd9110',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '32'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/order/send-email/50',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 3774
+    },
+    timestamp: '2023-07-24T06:06:46.257Z'
+  }
+}
