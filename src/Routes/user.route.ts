@@ -8,6 +8,7 @@ import {
   getImage,
   getUserById,
   resetPassword,
+  sendOTP,
   updateUser,
   //   uploadImage,
 } from "../Controller/user.controller";
@@ -28,4 +29,5 @@ route.put("/:id", IsAuth, updateUser);
 route.delete("/:id", IsAuth, deleteUser);
 route.post("/reset-password", IsAuth, resetPassword);
 route.post("/forgot-password", IsAuth, forgotPassword);
+route.post("/send-otp", IsAuth, sendOTP);
 export default route;

@@ -4116,3 +4116,182 @@
     timestamp: '2023-07-24T06:06:46.257Z'
   }
 }
+{
+  level: 'warn',
+  message: 'HTTP POST /user/send-otp',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/send-otp',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjkwMTc4NTU4LCJleHAiOjE3MjE3MTQ1NTh9.YmgDiHt60WW_C12kLYgnDPJDvBteCTl_gPlUA-02L_8',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'e4cd155f-c9e7-407b-b15c-5e985b956065',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '42'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/user/send-otp',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 2269
+    },
+    timestamp: '2023-07-24T08:58:24.026Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /user/send-otp',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/send-otp',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjkwMTc4NTU4LCJleHAiOjE3MjE3MTQ1NTh9.YmgDiHt60WW_C12kLYgnDPJDvBteCTl_gPlUA-02L_8',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'c4b53db7-63a2-4fe5-b342-d001f6a965c2',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '42'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/user/send-otp',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 326
+    },
+    timestamp: '2023-07-24T09:00:21.413Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /user/send-otp',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/send-otp',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjkwMTc4NTU4LCJleHAiOjE3MjE3MTQ1NTh9.YmgDiHt60WW_C12kLYgnDPJDvBteCTl_gPlUA-02L_8',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '4b8e78c1-8a4d-4043-b0bc-c91ceb5e4da0',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '42'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/user/send-otp',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 269
+    },
+    timestamp: '2023-07-24T09:02:26.563Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP POST /user/send-otp',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/send-otp',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjkwMTc4NTU4LCJleHAiOjE3MjE3MTQ1NTh9.YmgDiHt60WW_C12kLYgnDPJDvBteCTl_gPlUA-02L_8',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '30dd18d4-b4ca-409f-b935-00d64219dad6',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '42'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/user/send-otp',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 225
+    },
+    timestamp: '2023-07-24T09:27:50.578Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /user/send-otp',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/send-otp',
+        headers: {
+          'content-type': 'application/json',
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6InZpa2FsIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjkwMTc4NTU4LCJleHAiOjE3MjE3MTQ1NTh9.YmgDiHt60WW_C12kLYgnDPJDvBteCTl_gPlUA-02L_8',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': '08d07248-905f-49b7-9253-01d6f0407eff',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '42'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/user/send-otp',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 1669
+    },
+    timestamp: '2023-07-24T09:28:46.965Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /user/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/user/login',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.32.3',
+          accept: '*/*',
+          'cache-control': 'no-cache',
+          'postman-token': 'dee267ff-0aec-481a-9446-96377f522081',
+          host: 'localhost:8000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '63'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/user/login',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 436
+    },
+    timestamp: '2023-07-24T10:25:22.008Z'
+  }
+}

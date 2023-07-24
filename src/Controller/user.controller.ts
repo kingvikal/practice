@@ -3,12 +3,17 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import path from "path";
+import otpGenerator from "otp-generator";
 import { RegisterValidate } from "../Validation/joiValidation";
 import { AppDataSource } from "../Database/AppDataSource";
 import { User } from "../Models/user.model";
 import { sendMail } from "../Utils/mail.service";
+import twilio from "twilio";
 import logger from "../Utils/logger";
 
+interface UserRequest extends Request {
+  user?: any;
+}
 dotenv.config();
 const userRepo = AppDataSource.getRepository(User);
 export const Register = async (req: Request, res: Response) => {
@@ -227,31 +232,37 @@ export const forgotPassword = async (
   }
 };
 
-export const resetPassword = async (req: Request, res: Response) => {
+export const resetPassword = async (req: UserRequest, res: Response) => {
   try {
-    const { newPassword, confirmPassword } = req.body;
-    const { token } = req.params;
+    const { email, newPassword, confirmPassword, otp } = req.body;
 
-    const newhashedPassword = bcrypt.hashSync(newPassword, 10);
+    const user = await userRepo.findOne({ where: { email } });
 
-    if (newPassword !== confirmPassword) {
-      return res.status(400).json({ message: "Password must match" });
+    if (!user) {
+      return res.status(400).json({ message: "User not found" });
     }
-    const secretKey = process.env.JWT_SECRET || "";
-    const isVerified = jwt.verify(token, secretKey);
+    const comparePassword = newPassword === confirmPassword;
 
-    if (!isVerified) {
-      res.status(400).json({ message: "Token not verified" });
-    } else {
-      const usersave = new User();
-      usersave.password = newhashedPassword;
-      await userRepo.save(usersave);
-
-      return res.status(200).json(usersave);
+    if (!comparePassword) {
+      return res.status(400).json({ message: "password must match" });
     }
+
+    if (newPassword && !confirmPassword) {
+      return res.status(400).json({ message: "Please enter confirm password" });
+    }
+
+    const hashedPassword = bcrypt.hashSync(newPassword, 12);
+
+    if (otp !== user.otp) {
+      return res.status(400).json({ message: "The OTP doesn't match" });
+    }
+    user.password = hashedPassword;
+
+    await userRepo.save(user);
+    return res.status(200).json({ message: "Password changed successfull" });
   } catch (err) {
     console.log(err);
-    res.status(500).send(err);
+    return res.status(500).json(err);
   }
 };
 
@@ -277,5 +288,52 @@ export const getImage = async (
     res.sendFile(path.normalize(photo));
   } catch (error) {
     res.status(500).json(error);
+  }
+};
+
+export const sendOTP = async (req: UserRequest, res: Response) => {
+  try {
+    const { mobileNumber } = req.body;
+    const { id } = req.user;
+    if (mobileNumber.length !== 14) {
+      return res.status(400).json({ message: "Invalid MobileNumber" });
+    }
+
+    const accountSID = process.env.SID;
+
+    const authToken = process.env.AUTH_TOKEN;
+
+    const client = twilio(accountSID, authToken);
+
+    function generateOTP(length: any) {
+      return otpGenerator.generate(length, {
+        digits: true,
+      });
+    }
+
+    const otp = generateOTP(6);
+
+    await userRepo
+      .createQueryBuilder()
+      .update(User)
+      .set({ otp: otp })
+      .where({ id: id })
+      .execute();
+
+    const response = await client.messages
+      .create({
+        body: `Your otp is : ${otp}`,
+        from: process.env.TWILIO_NUMBER,
+        to: mobileNumber,
+      })
+      .then(() => {
+        return res.status(200).json({ message: "OTP sent successfully" });
+      })
+      .catch((err) => {
+        return res.status(400).json({ message: "Cannot sent OTP", err });
+      });
+  } catch (err) {
+    console.log(err);
+    return res.status(500).json(err);
   }
 };

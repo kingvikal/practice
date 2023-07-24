@@ -44,6 +44,9 @@ export class User {
   @Column()
   password: string;
 
+  @Column({ nullable: true })
+  otp: string;
+
   @OneToMany(() => Rating, (rating) => rating.user)
   rating: Rating[];
 
